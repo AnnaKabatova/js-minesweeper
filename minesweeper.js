@@ -14,6 +14,11 @@ window.onload = function() {
   startGame();
 }
 
+function updateMinesCount() {
+  minesCount = parseInt(document.getElementById("mines-input").value);
+  restartGame();
+}
+
 function setMines() {
   let minesLeft = minesCount;
   while (minesLeft > 0) {
@@ -46,6 +51,18 @@ function startGame() {
     board.push(row);
   }
   console.log(board);
+}
+
+function restartGame() {
+  board = [];
+  tilesClicked = 0;
+  flagEnabled = false;
+  gameOver = false;
+  minesLocation = [];
+
+  document.getElementById("board").innerHTML = "";
+
+  startGame();
 }
 
 function setFlag() {
