@@ -11,7 +11,7 @@ This is a classic Minesweeper game implemented in JavaScript, HTML, and CSS. It 
 ## Project Setup
 1. Clone the repository:
    ```bash
-   git clone [<repository-url>](https://github.com/AnnaKabatova/js-minesweeper.git)
+   git clone https://github.com/AnnaKabatova/js-minesweeper.git
    cd minesweeper-game
 2. Open index.html in your web browser and play.
 
